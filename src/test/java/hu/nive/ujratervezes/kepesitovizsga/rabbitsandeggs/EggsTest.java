@@ -3,7 +3,7 @@ package hu.nive.ujratervezes.kepesitovizsga.rabbitsandeggs;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class EggsTest {
+public class EggsTest  {
 
     @Test
     public void testGetRabbitWithMaxEggs() {
