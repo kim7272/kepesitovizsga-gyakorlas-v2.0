@@ -1,4 +1,4 @@
-package hu.nive.ujratervezes.kepesitovizsga.architect;
+  package hu.nive.ujratervezes.kepesitovizsga.architect;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -40,3 +40,4 @@ public class PlanTest {
         Assertions.assertEquals(PlanType.INDUSTRIAL, plan.getType());
     }
 }
+

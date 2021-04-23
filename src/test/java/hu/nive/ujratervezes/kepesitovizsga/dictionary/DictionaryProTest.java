@@ -1,4 +1,4 @@
-package hu.nive.ujratervezes.kepesitovizsga.dictionary;
+ package hu.nive.ujratervezes.kepesitovizsga.dictionary;
 
 import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.Assertions;
@@ -8,9 +8,9 @@ import org.mariadb.jdbc.MariaDbDataSource;
 
 import java.sql.SQLException;
 
-public class DictionaryTest {
+public class DictionaryProTest {
 
-    private Dictionary dictionary;
+    private DictionaryPro dictionary;
     private MariaDbDataSource dataSource;
 
     @BeforeEach
@@ -24,7 +24,7 @@ public class DictionaryTest {
             throw new IllegalStateException("Can not get data from database.", sqle);
         }
 
-        dictionary = new Dictionary(dataSource);
+        dictionary = new DictionaryPro(dataSource);
 
         Flyway fw = Flyway.configure().dataSource(dataSource).load();
         fw.clean();
@@ -53,3 +53,6 @@ public class DictionaryTest {
         Assertions.assertEquals("No such word in dictionary.", ex.getMessage());
     }
 }
+
+
+

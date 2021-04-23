@@ -1,4 +1,4 @@
-package hu.nive.ujratervezes.kepesitovizsga.architect;
+ package hu.nive.ujratervezes.kepesitovizsga.architect;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -107,3 +107,5 @@ public class ArchitectStudioTest {
         Assertions.assertEquals("Parameter must not be null!", ex.getMessage());
     }
 }
+
+
